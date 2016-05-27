@@ -1,0 +1,17 @@
+{
+  "build": {
+    "extra_flags": "-DRASPBERRYPI -DRASPBERRYPI1", 
+    "f_cpu": "700000000L", 
+    "mcu": "bcm2835"
+  }, 
+  "frameworks": [
+    "wiringpi"
+  ], 
+  "name": "Raspberry Pi 1 Model B", 
+  "upload": {
+    "maximum_ram_size": 536870912, 
+    "maximum_size": 536870912
+  }, 
+  "url": "https://www.raspberrypi.org", 
+  "vendor": "Raspberry Pi"
+}

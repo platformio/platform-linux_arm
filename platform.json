@@ -1,0 +1,42 @@
+{
+  "name": "linux_arm",
+  "title": "Linux ARM",
+  "description": "Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.",
+  "url": "http://platformio.org/platforms/linux_arm",
+  "homepage": "http://platformio.org/platforms/linux_arm",
+  "license": {
+    "type": "Apache-2.0",
+    "url": "http://opensource.org/licenses/apache2.0.php"
+  },
+  "engines": {
+    "platformio": "~3.0.0",
+    "scons": ">=2.3.0,<2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/platformio/platform-linux_arm.git"
+  },
+  "version": "0.0.0",
+  "packageRepositories": [
+    "https://dl.bintray.com/platformio/dl-packages/manifest.json",
+    "https://sourceforge.net/projects/platformio-storage/files/packages/manifest.json/download",
+    "http://dl.platformio.org/packages/manifest.json"
+  ],
+  "frameworks": {
+    "wiringpi": {
+      "package": "framework-wiringpi",
+      "script": "builder/frameworks/wiringpi.py"
+    }
+  },
+  "packages": {
+    "toolchain-gccarmlinuxgnueabi": {
+      "type": "toolchain",
+      "version": "~1.40802.0"
+    },
+    "framework-wiringpi": {
+      "type": "framework",
+      "optional": true,
+      "version": "~1.1.0"
+    }
+  }
+}
