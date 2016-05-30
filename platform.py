@@ -13,13 +13,13 @@
 # limitations under the License.
 
 from platformio import exception, util
-from platformio.managers.platform import BasePlatform
+from platformio.managers.platform import PlatformBase
 
 
-class Linux_armPlatform(BasePlatform):
+class Linux_armPlatform(PlatformBase):
 
     def get_packages(self):
-        packages = BasePlatform.get_packages(self)
+        packages = PlatformBase.get_packages(self)
         if ("linux_arm" in util.get_systype() and
                 "toolchain-gccarmlinuxgnueabi" in packages):
             del packages['toolchain-gccarmlinuxgnueabi']
@@ -34,5 +34,5 @@ class Linux_armPlatform(BasePlatform):
                 "Raspberry Pi"
             )
 
-        return BasePlatform.configure_default_packages(
+        return PlatformBase.configure_default_packages(
             self, variables, targets)
