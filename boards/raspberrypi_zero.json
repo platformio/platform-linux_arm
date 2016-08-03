@@ -1,0 +1,17 @@
+{
+  "build": {
+    "extra_flags": "-DRASPBERRYPI -DRASPBERRYPIZERO", 
+    "f_cpu": "1000000000L", 
+    "mcu": "bcm2835"
+  }, 
+  "frameworks": [
+    "wiringpi"
+  ], 
+  "name": "Raspberry Pi Zero", 
+  "upload": {
+    "maximum_ram_size": 536870912, 
+    "maximum_size": 536870912
+  }, 
+  "url": "https://www.raspberrypi.org", 
+  "vendor": "Raspberry Pi"
+}
