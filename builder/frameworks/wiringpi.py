@@ -59,7 +59,7 @@ env.Append(
 libs = []
 libs.append(env.BuildLibrary(
     join("$BUILD_DIR", "FrameworkWiringPi"),
-    join(env.DevPlatform().get_package_dir("framework-wiringpi"), "wiringPi")
+    join(env.PioPlatform().get_package_dir("framework-wiringpi"), "wiringPi")
 ))
 
 env.Append(LIBS=libs)
