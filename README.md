@@ -14,5 +14,5 @@ Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (O
 > platformio platform install linux_arm
 
 # install development version
-> platformio platform install https://github.com/platformio/platform-linux_arm/archive/develop.zip
+> platformio platform install https://github.com/platformio/platform-linux_arm.git
 ```
