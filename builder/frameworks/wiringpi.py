@@ -47,7 +47,8 @@ env.Append(
     ],
 
     CPPPATH=[
-        join("$BUILD_DIR", "FrameworkWiringPi")
+        join(env.PioPlatform().get_package_dir(
+             "framework-wiringpi"), "wiringPi")
     ]
 )
 
