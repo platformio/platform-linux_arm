@@ -18,8 +18,9 @@ from platformio.managers.platform import PlatformBase
 
 class Linux_armPlatform(PlatformBase):
 
-    def get_packages(self):
-        packages = PlatformBase.get_packages(self)
+    @property
+    def packages(self):
+        packages = PlatformBase.packages.fget(self)
         if ("linux_arm" in util.get_systype() and
                 "toolchain-gccarmlinuxgnueabi" in packages):
             del packages['toolchain-gccarmlinuxgnueabi']
