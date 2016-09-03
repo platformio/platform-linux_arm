@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/platformio/platform-linux_arm.git"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "packageRepositories": [
     "https://dl.bintray.com/platformio/dl-packages/manifest.json",
     "https://sourceforge.net/projects/platformio-storage/files/packages/manifest.json/download",
@@ -33,7 +33,7 @@
     "framework-wiringpi": {
       "type": "framework",
       "optional": true,
-      "version": "~1.231.0"
+      "version": "~1.232.0"
     }
   }
 }
