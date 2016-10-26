@@ -27,13 +27,12 @@ class Linux_armPlatform(PlatformBase):
         return packages
 
     def configure_default_packages(self, variables, targets):
-        if (variables.get("pioframework") == "wiringpi" and
+        if ("wiringpi" in variables.get("pioframework") and
                 "linux_arm" not in util.get_systype()):
             raise exception.PlatformioException(
-                "PlatformIO does not support temporary cross-compilation "
+                "PlatformIO temporary does not support cross-compilation "
                 "for WiringPi framework. Please run PlatformIO directly on "
-                "Raspberry Pi"
-            )
+                "Raspberry Pi")
 
-        return PlatformBase.configure_default_packages(
-            self, variables, targets)
+        return PlatformBase.configure_default_packages(self, variables,
+                                                       targets)
