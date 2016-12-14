@@ -1,0 +1,17 @@
+{
+  "build": {
+    "extra_flags": "",
+    "f_cpu": "1000000000L",
+    "mcu": "exynos3250"
+  },
+  "frameworks": [
+    "artik-sdk"
+  ],
+  "name": "Samsung ARTIK 520",
+  "upload": {
+    "maximum_ram_size": 536870912,
+    "maximum_size": 536870912
+  },
+  "url": "https://www.artik.io",
+  "vendor": "Samsung"
+}
