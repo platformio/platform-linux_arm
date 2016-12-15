@@ -24,7 +24,7 @@
       "script": "builder/frameworks/wiringpi.py"
     },
     "artik-sdk": {
-      "package": "framework-artik-sdk",
+      "package": "framework-virtual-artik-sdk",
       "script": "builder/frameworks/artik-sdk.py"
     }
   },
@@ -38,10 +38,10 @@
       "optional": true,
       "version": "~1.232.0"
     },
-    "framework-artik-sdk": {
+    "framework-virtual-artik-sdk": {
       "type": "framework",
       "optional": true,
-      "version": "1.0.2"
+      "version": "0.0.0"
     }
   }
 }
