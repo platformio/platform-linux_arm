@@ -24,11 +24,16 @@ MQTT, and others.
 http://www.artik.io
 """
 
-from os.path import join
+from os.path import join, isdir
+from os import listdir
 
 from SCons.Script import DefaultEnvironment
 
 env = DefaultEnvironment()
+
+sdkdir = env.PioPlatform().get_package_dir("framework-artik-sdk")
+incdir = join(sdkdir, "include/artik")
+libdir = join(sdkdir, "lib")
 
 env.Replace(
     CPPFLAGS=[
@@ -47,14 +52,14 @@ env.Replace(
 
 env.Append(
     CPPPATH=[
-        "/usr/include/artik/base",
-        "/usr/include/artik/bluetooth",
-        "/usr/include/artik/connectivity",
-        "/usr/include/artik/lwm2m",
-        "/usr/include/artik/media",
-        "/usr/include/artik/sensor",
-        "/usr/include/artik/systemio",
-        "/usr/include/artik/wifi",
-        "/usr/include/artik/zigbee"
-    ]
+        join(incdir,o) for o in listdir(incdir) if isdir(join(incdir,o))
+    ],
+
+    LIBPATH=[
+        libdir
+    ],
+
+    RPATH=[
+        libdir
+    ],
 )

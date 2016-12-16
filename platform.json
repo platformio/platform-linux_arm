@@ -16,7 +16,8 @@
   "packageRepositories": [
     "https://dl.bintray.com/platformio/dl-packages/manifest.json",
     "https://sourceforge.net/projects/platformio-storage/files/packages/manifest.json/download",
-    "http://dl.platformio.org/packages/manifest.json"
+    "http://dl.platformio.org/packages/manifest.json",
+    "http://repo.artik.cloud/artik/bin/pub/platformio/manifest.json"
   ],
   "frameworks": {
     "wiringpi": {
@@ -24,7 +25,7 @@
       "script": "builder/frameworks/wiringpi.py"
     },
     "artik-sdk": {
-      "package": "framework-virtual-artik-sdk",
+      "package": "framework-artik-sdk",
       "script": "builder/frameworks/artik-sdk.py"
     }
   },
@@ -38,10 +39,10 @@
       "optional": true,
       "version": "~1.232.0"
     },
-    "framework-virtual-artik-sdk": {
+    "framework-artik-sdk": {
       "type": "framework",
       "optional": true,
-      "version": "0.0.0"
+      "version": "~1.0.0"
     }
   }
 }
