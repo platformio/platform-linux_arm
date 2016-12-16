@@ -32,7 +32,7 @@ from SCons.Script import DefaultEnvironment
 env = DefaultEnvironment()
 
 sdkdir = env.PioPlatform().get_package_dir("framework-artik-sdk")
-incdir = join(sdkdir, "include/artik")
+incdir = join(sdkdir, "include", "artik")
 libdir = join(sdkdir, "lib")
 
 env.Replace(
@@ -52,7 +52,7 @@ env.Replace(
 
 env.Append(
     CPPPATH=[
-        join(incdir,o) for o in listdir(incdir) if isdir(join(incdir,o))
+        join(incdir, o) for o in listdir(incdir) if isdir(join(incdir, o))
     ],
 
     LIBPATH=[
@@ -61,5 +61,5 @@ env.Append(
 
     RPATH=[
         libdir
-    ],
+    ]
 )
