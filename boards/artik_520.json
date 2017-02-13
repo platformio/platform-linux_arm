@@ -10,7 +10,7 @@
   "name": "Samsung ARTIK 520",
   "upload": {
     "maximum_ram_size": 536870912,
-    "maximum_size": 536870912
+    "maximum_size": 4294967296
   },
   "url": "https://www.artik.io",
   "vendor": "Samsung"
