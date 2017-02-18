@@ -10,7 +10,7 @@
   "name": "Samsung ARTIK 1020",
   "upload": {
     "maximum_ram_size": 2147483648,
-    "maximum_size": 2147483648
+    "maximum_size": 17179869184
   },
   "url": "https://www.artik.io",
   "vendor": "Samsung"
