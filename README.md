@@ -7,7 +7,7 @@ Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (O
 
 # Usage
 
-1. [Install PlatformIO Core](http://docs.platformio.org/en/latest/core.html)
+1. [Install PlatformIO Core](http://docs.platformio.org/page/core.html)
 2. Install Linux ARM development platform:
 ```bash
 # install the latest stable version
