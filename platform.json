@@ -37,7 +37,7 @@
     "framework-wiringpi": {
       "type": "framework",
       "optional": true,
-      "version": "~1.232.0"
+      "version": "~1.242.0"
     },
     "framework-artik-sdk": {
       "type": "framework",
