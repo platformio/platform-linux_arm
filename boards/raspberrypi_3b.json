@@ -1,0 +1,17 @@
+{
+  "build": {
+    "extra_flags": "-DRASPBERRYPI -DRASPBERRYPI3",
+    "f_cpu": "1200000000L",
+    "mcu": "bcm2837"
+  },
+  "frameworks": [
+    "wiringpi"
+  ],
+  "name": "Raspberry Pi 3 Model B",
+  "upload": {
+    "maximum_ram_size": 1073741824,
+    "maximum_size": 1073741824
+  },
+  "url": "https://www.raspberrypi.org",
+  "vendor": "Raspberry Pi"
+}
