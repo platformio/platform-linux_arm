@@ -21,7 +21,7 @@ class Linux_armPlatform(PlatformBase):
     @staticmethod
     def _is_native():
         systype = util.get_systype()
-        return "linux_arm" in systype or "linux_aarch64" in systype
+        return not ("linux_arm" in systype or "linux_aarch64" in systype)
 
     @property
     def packages(self):
@@ -34,7 +34,7 @@ class Linux_armPlatform(PlatformBase):
         if self._is_native() and "wiringpi" in variables.get("pioframework"):
             raise exception.PlatformioException(
                 "PlatformIO temporary does not support cross-compilation "
-                "for WiringPi framework. Please run PlatformIO directly on "
+                "for WiringPi framework. Please use PIO Core directly on "
                 "Raspberry Pi")
 
         return PlatformBase.configure_default_packages(self, variables,
