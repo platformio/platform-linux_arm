@@ -1,0 +1,17 @@
+{
+  "build": {
+    "extra_flags": "",
+    "f_cpu": "1000000000L",
+    "mcu": "exynos3250"
+  },
+  "frameworks": [
+    "artik-sdk"
+  ],
+  "name": "RushUp Kitra 520",
+  "upload": {
+    "maximum_ram_size": 536870912,
+    "maximum_size": 4294967296
+  },
+  "url": "https://www.rushup.tech/kitra",
+  "vendor": "RushUp"
+}
