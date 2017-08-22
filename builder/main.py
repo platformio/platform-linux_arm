@@ -28,6 +28,7 @@ env.Replace(
     AS="${_BINPREFIX}as",
     CC="${_BINPREFIX}gcc",
     CXX="${_BINPREFIX}g++",
+    GDB="${_BINPREFIX}gdb",
     OBJCOPY="${_BINPREFIX}objcopy",
     RANLIB="${_BINPREFIX}ranlib",
     SIZETOOL="${_BINPREFIX}size",
