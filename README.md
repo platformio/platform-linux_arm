@@ -7,12 +7,27 @@ Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (O
 
 # Usage
 
-1. [Install PlatformIO Core](http://docs.platformio.org/page/core.html)
-2. Install Linux ARM development platform:
-```bash
-# install the latest stable version
-> platformio platform install linux_arm
+1. [Install PlatformIO](http://platformio.org)
+2. Create PlatformIO project and configure a platform option in [platformio.ini](http://docs.platformio.org/page/projectconf.html) file:
 
-# install development version
-> platformio platform install https://github.com/platformio/platform-linux_arm.git
+## Stable version
+
+```ini
+[env:stable]
+platform = linux_arm
+board = ...
+...
 ```
+
+## Development version
+
+```ini
+[env:development]
+platform = https://github.com/platformio/platform-linux_arm.git
+board = ...
+...
+```
+
+# Configuration
+
+Please navigate to [documentation](http://docs.platformio.org/page/platforms/linux_arm.html).
