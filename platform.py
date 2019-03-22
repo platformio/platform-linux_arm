@@ -32,7 +32,7 @@ class Linux_armPlatform(PlatformBase):
 
     def configure_default_packages(self, variables, targets):
         if not self._is_native() and "wiringpi" in variables.get(
-                "pioframework"):
+                "pioframework", []):
             raise exception.PlatformioException(
                 "PlatformIO temporary does not support cross-compilation "
                 "for WiringPi framework. Please use PIO Core directly on "
