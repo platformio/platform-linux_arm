@@ -15,17 +15,12 @@
   "version": "1.4.6",
   "packageRepositories": [
     "https://dl.bintray.com/platformio/dl-packages/manifest.json",
-    "http://dl.platformio.org/packages/manifest.json",
-    "http://repo.artik.cloud/artik/bin/pub/platformio/manifest.json"
+    "http://dl.platformio.org/packages/manifest.json"
   ],
   "frameworks": {
     "wiringpi": {
       "package": "framework-wiringpi",
       "script": "builder/frameworks/wiringpi.py"
-    },
-    "artik-sdk": {
-      "package": "framework-artik-sdk",
-      "script": "builder/frameworks/artik-sdk.py"
     }
   },
   "packages": {
@@ -37,11 +32,6 @@
       "type": "framework",
       "optional": true,
       "version": "~1.242.0"
-    },
-    "framework-artik-sdk": {
-      "type": "framework",
-      "optional": true,
-      "version": "*"
     }
   }
 }
