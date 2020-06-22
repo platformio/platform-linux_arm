@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/platformio/platform-linux_arm.git"
   },
-  "version": "1.5.0",
+  "version": "1.5.1",
   "packageRepositories": [
     "https://dl.bintray.com/platformio/dl-packages/manifest.json",
     "http://dl.platformio.org/packages/manifest.json"
@@ -19,7 +19,10 @@
   "frameworks": {
     "wiringpi": {
       "package": "framework-wiringpi",
-      "script": "builder/frameworks/wiringpi.py"
+      "script": "builder/frameworks/wiringpi.py",
+      "description": "WiringPi is a GPIO access library written in C for the BCM2835 used in the Raspberry Pi. It's designed to be familiar to people who have used the Arduino 'wiring' system",
+      "url": "http://wiringpi.com",
+      "title": "WiringPi"
     }
   },
   "packages": {
