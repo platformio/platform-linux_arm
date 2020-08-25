@@ -5,9 +5,9 @@
   "homepage": "http://platformio.org/platforms/linux_arm",
   "license": "Apache-2.0",
   "keywords": [
-      "dev-platform",
-      "Linux",
-      "ARM"
+    "dev-platform",
+    "Linux",
+    "ARM"
   ],
   "engines": {
     "platformio": "<5"
@@ -33,11 +33,13 @@
   "packages": {
     "toolchain-gccarmlinuxgnueabi": {
       "type": "toolchain",
+      "owner": "platformio",
       "version": "~1.40802.0"
     },
     "framework-wiringpi": {
       "type": "framework",
       "optional": true,
+      "owner": "platformio",
       "version": "~1.242.0"
     }
   }
