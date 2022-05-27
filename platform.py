@@ -12,15 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from platformio import exception, util
-from platformio.managers.platform import PlatformBase
+from platformio import exception
+from platformio.public import PlatformBase, get_systype
 
 
 class Linux_armPlatform(PlatformBase):
 
     @staticmethod
     def _is_native():
-        systype = util.get_systype()
+        systype = get_systype()
         return "linux_arm" in systype or "linux_aarch64" in systype
 
     @property
@@ -37,6 +37,4 @@ class Linux_armPlatform(PlatformBase):
                 "PlatformIO temporary does not support cross-compilation "
                 "for WiringPi framework. Please use PIO Core directly on "
                 "Raspberry Pi")
-
-        return PlatformBase.configure_default_packages(self, variables,
-                                                       targets)
+        return super().configure_default_packages(variables, targets)

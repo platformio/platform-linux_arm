@@ -1,4 +1,4 @@
-# Linux ARM: development platform for [PlatformIO](http://platformio.org)
+# Linux ARM: development platform for [PlatformIO](https://platformio.org)
 
 Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.
 
@@ -7,7 +7,7 @@ Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (O
 
 # Usage
 
-1. [Install PlatformIO](http://platformio.org)
+1. [Install PlatformIO](https://platformio.org)
 2. Create PlatformIO project and configure a platform option in [platformio.ini](https://docs.platformio.org/page/projectconf.html) file:
 
 ## Stable version
