@@ -2,21 +2,21 @@
   "name": "linux_arm",
   "title": "Linux ARM",
   "description": "Linux ARM is a Unix-like and mostly POSIX-compliant computer operating system (OS) assembled under the model of free and open-source software development and distribution. Using host OS (Mac OS X, Linux ARM) you can build native application for Linux ARM platform.",
-  "url": "http://platformio.org/platforms/linux_arm",
-  "homepage": "http://platformio.org/platforms/linux_arm",
+  "homepage": "https://registry.platformio.org/platforms/platformio/linux_arm",
   "license": "Apache-2.0",
+  "keywords": [
+    "dev-platform",
+    "Linux",
+    "ARM"
+  ],
   "engines": {
-    "platformio": "<5"
+    "platformio": "^6"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/platformio/platform-linux_arm.git"
   },
-  "version": "1.5.1",
-  "packageRepositories": [
-    "https://dl.bintray.com/platformio/dl-packages/manifest.json",
-    "http://dl.platformio.org/packages/manifest.json"
-  ],
+  "version": "1.6.0",
   "frameworks": {
     "wiringpi": {
       "package": "framework-wiringpi",
@@ -29,11 +29,13 @@
   "packages": {
     "toolchain-gccarmlinuxgnueabi": {
       "type": "toolchain",
+      "owner": "platformio",
       "version": "~1.40802.0"
     },
     "framework-wiringpi": {
       "type": "framework",
       "optional": true,
+      "owner": "platformio",
       "version": "~1.242.0"
     }
   }
