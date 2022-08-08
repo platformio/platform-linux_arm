@@ -14,7 +14,7 @@ $ cd platform-linux_arm/examples/wiringpi-blink
 $ pio run
 
 # Run program
-> .pioenvs/raspberrypi_2b/program
+> .pio/raspberrypi_2b/program
 
 # Clean build files
 $ pio run --target clean
